@@ -42,7 +42,12 @@ function App() {
           </button>
         </div>
       ) : (
-        <Chat socket={socket} username={username} room={room} />
+        <div>
+          <h1 className="roomid">
+            Room Id:<span className="idnum">{room}</span>
+          </h1>
+          <Chat socket={socket} username={username} room={room} />
+        </div>
       )}
     </div>
   );

@@ -52,12 +52,7 @@ function Chat({ socket, username, room }) {
                     <p>{mess.message}</p>
                   </div>
                   <div className="message-meta">
-                    <p
-                      id="time
-                  "
-                    >
-                      {mess.time}
-                    </p>
+                    <p id="time">{mess.time}</p>
                     <p id="author">{mess.writer}</p>
                   </div>
                 </div>
